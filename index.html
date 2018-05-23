@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FIFA2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src="index.js"></script>
+</head>
+
+<body>
+<section class="modal" id="modal">
+    <div class="inner" id="modal-inner">
+
+    </div>
+</section>
+
+<header>
+    <span>FIFA 2018</span>
+    <nav>
+        <ul>
+            <li><a href="#top__main">Главная</a></li>
+            <li><a href="#match">Матч</a></li>
+            <li><a href="#competition">Консурс</a></li>
+            <li><a href="#but_ticket">Купить билет</a></li>
+        </ul>
+    </nav>
+</header>
+<article>
+    <section class="head" id="#top__main">
+        <div class="inner">
+            <h1>Получи билет на финальный матч</h1>
+            <button>Подробнее</button>
+        </div>
+
+        <img src="https://z51.d.sdska.ru/2-z51-4f8d634a-bdc1-4fd6-bd6d-2533d434df07.jpg" alt="">
+    </section>
+    <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+        <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
+              fill="#fff"/>
+    </svg>
+
+    <section class="commands" id="match">
+        <div class="wrapper">
+            <h1>Россия – Бразилия</h1>
+            <div class="inner">
+                <div class="russia" id="russia-command">
+                    <!--<h3>Вратари</h3>-->
+                    <!--<div class="image">-->
+                        <!--<img src="http://img.fifa.com/images/fcc/2017/players/prt-3/215017.png" alt="">-->
+                        <!--<span class="name_player">Игорь Акинфеев</span>-->
+                    <!--</div>-->
+                </div>
+                <div class="map">
+                    <img src="https://kz.all.biz/img/kz/service_catalog/209726.jpeg" alt="">
+                </div>
+                <div class="brazil" id="brazil-command">
+                    <!--<h3>Вратари</h3>-->
+                    <!--<div class="image">-->
+                        <!--<img src="https://tmssl.akamaized.net//images/portrait/originals/105470-1447747290.jpg" alt="">-->
+                        <!--<span class="name_player">Alisson Ramses</span>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions" id="competition">
+        <div class="wrapper">
+            <h1>Ответь на вопросы и получи скидку на финал чемпионата мира по футболу</h1>
+            <form id="questions">
+                <ul id="list_questions"></ul>
+                <button id="button_answer" class="submit">
+                    Ответить
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="buy_ticket" id="but_ticket">
+        <form>
+            <h3>Купить билеты</h3>
+            <input type="text" placeholder="ФИО" id="fio">
+            <input type="text" placeholder="Email" id="email">
+            <input type="text" placeholder="Номер телефона" id="phone_number">
+            <input type="text" placeholder="Промо-код" id="promo_kod">
+            <button id="buy_ticket">
+                <img class="icon football-left" src="https://image.flaticon.com/icons/svg/53/53283.svg" alt="">
+                Купить
+                <img class="icon football-right" src="https://image.flaticon.com/icons/svg/53/53283.svg" alt="">
+            </button>
+        </form>
+    </section>
+</article>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#top__main">Главная</a></li>
+            <li><a href="#match">Матч</a></li>
+            <li><a href="#competition">Консурс</a></li>
+            <li><a href="#but_ticket">Купить билет</a></li>
+        </ul>
+    </nav>
+
+    <span style="margin: 20px 0; width: 100%; color: rgba(255,255,255,0.5); text-align: center">©Copyright 2018</span>
+</footer>
+
+</body>
+</html>

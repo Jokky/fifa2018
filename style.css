@@ -1,0 +1,402 @@
+* {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, serif;
+}
+
+.modal {
+    display: none !important;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .inner {
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+}
+
+.modal .inner h2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3rem;
+}
+
+.modal .inner h1 {
+    font-size: 5rem;
+    padding: 10px;
+    background-color: #333333;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header span {
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: auto;
+    position: absolute;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+article .head {
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+article .head .inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+article .head .inner h1 {
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+article .head .inner button {
+    font-size: 1.2rem;
+    background: #eb433e;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+article .head .inner button:hover {
+    background-color: #ff6666;
+}
+
+article .head img {
+    z-index: -1;
+    filter: brightness(50%);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+
+article svg {
+    position: relative;
+    top: -50px;
+    z-index: 0;
+}
+
+article .commands {
+    background-color: #fff;
+    z-index: 0;
+    height: 100%;
+    margin-top: -110px;
+}
+
+article .commands .wrapper {
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+article .commands h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+article .commands .inner {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article .commands .inner h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    padding: 10px;
+}
+
+article .commands .inner .image {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    filter: brightness(90%);
+    margin-bottom: 10px;
+}
+
+article .commands .inner .image img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article .commands .inner .image .name_player {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 10px auto;
+    z-index: 2;
+}
+
+article .commands .inner .russia {
+    height: auto;
+    max-width: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+article .commands .inner .map {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    margin: 0 10px;
+    background-color: green;
+}
+
+article .commands .inner .map img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article .commands .inner .brazil {
+    max-width: 200px;
+    height: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+article .buy_ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3766c6;
+    padding: 50px;
+}
+
+article .buy_ticket form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+article .buy_ticket form h3 {
+    margin: 0 auto 20px auto;
+    font-size: 1.75rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+article .buy_ticket form input {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+article .buy_ticket form button {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background: #eb433e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+article .buy_ticket form button:hover {
+    background-color: #ff6666;
+}
+
+article .buy_ticket form button .icon {
+    position: absolute;
+    width: 100px;
+    filter: invert(100%);
+    opacity: .2;
+}
+
+article .buy_ticket form button img {
+    color: #fff;
+    fill: currentColor;
+}
+
+article .buy_ticket form button .football-left {
+    left: 20%;
+    top: -50%;
+}
+
+article .questions {
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+article .questions .wrapper {
+    margin: 50px 0;
+    max-width: 960px;
+}
+
+article .questions .wrapper h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+article .questions .wrapper ul {
+    margin-top: 40px;
+    list-style: none;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+article .questions .wrapper ul li {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 40px auto;
+}
+
+article .questions .wrapper ul li input {
+    margin-top: 15px;
+}
+
+article .questions .wrapper ul li h3 {
+    font-weight: 700;
+}
+
+article .questions .wrapper .submit {
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background: #eb433e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+article .questions .wrapper .submit:hover {
+    background-color: #ff6666;
+}
+
+footer {
+    min-height: 250px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+}
+
+footer nav ul li {
+    padding: 5px;
+    margin: 0 20px;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
+button {
+    font-size: 1.2rem;
+    background: #eb433e;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6666;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    border-bottom: 2px solid #fff;
+}
